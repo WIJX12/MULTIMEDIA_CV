@@ -9,30 +9,61 @@
         <script src="JS_CV.js" type="text/javascript"></script>
         </head>
     <body>  
-        <div class="Head_info"> <!--TODO: Posar com un nav pot ser-->
+        <header class="Head_info"> <!--TODO: Posar com un nav pot ser-->
             <button type="button" id="IndexButton"  onclick="menuButton('index');">About me</button> <!-- TODO: Add more buttons ?? -->
             <button type="button" id="IndexButton"  onclick="menuButton('index');">Resume</button> <!-- TODO: Add more buttons ?? -->
             <button type="button" id="ContactButton"  onclick="menuButton('Contact');">Contact</button>        
-        </div>
-        <div id="Main_info">       
-            <img alt="Photo_author_of_CV" src="../PHOTO_CV.jpeg" id="profile_pic">
-            <div>
-                <p>Programmer & web designer</p>
+        </header>
+        <section id="Main_info">       
+            <img alt="Photo of author" src="PHOTO_CV.jpeg" id="profile_pic">
+            <div id="MainText">
                 <h1>Guillem Pozo Sebastián</h1>
+                <h2>Programmer & web designer</h2>
+                <button type="button" id="ContactButton"  onclick="menuButton('Index');">Download CV</button>
             </div>
-        </div>
-        <div id="bio">
-            <div id="Content">
-                <h1>What i do</h1> 
-                <div id="1option" class="Option">
-                </div>
-                <div id="2option" class="Option">
+        </section>
+        <section id="bio">
+            <h1>What i do</h1>
+            <div id="Content"> 
+                    <div id="1option" class="Option">
+                        <div class="iconDescription">
+                            <img src="icons/code-slash.svg" alt="Code screen" class="icons" id="codeIcon">
+                            <h2>Software developer</h2> 
+                        </div>
+                        <h3 style="margin:10px; font-weight:lighter; background-color: #523F62;">Experience with web site development. Seasoned in different languages as HTML, CSS and others. And also knowledge of scripting language such as could be PHP and JavaScript.</h3>
+                    </div>
+                    <div id="2option" class="Option">
+                        <div class="iconDescription">
+                            <img src="icons/window-fullscreen.svg" alt="Screen icon" class="icons" id="codeScreen">
+                            <h2>Web designer</h2>
+                        </div>
+                        <h3 style="margin:10px; font-weight:lighter; background-color: #523F62;"> With experience in multiple programming languages. From the highest level as Python, even assembly language such as MIPS and DOS. Furthermore, I have knowledge of C++, Java and others.</h3>                    
+                    </div>  
                 </div> 
             </div>
-        </div>
+        </section>
     </body>
     <footer class="Little_info">
         <!-- TODO: Find icons of TW, Github, Instagram and put into -->
+        <a href="https://www.instagram.com/">
+            <div class="iconDescription">
+                <img src="icons/instagram.svg" alt="Screen icon" class="footerIcons" id="InstagramIcon">
+                <p>Instagram</p>
+            </div>
+       </a>
+       <a href="https://twitter.com/home">
+            <div class="iconDescription">
+                <img src="icons/twitter.svg" alt="Screen icon" class="footerIcons" id="TwitterIcon">
+                <p>Twitter</p>
+            </div>  
+        </a>
+        <a href="https://github.com/WIJX12">
+            <div class="iconDescription">
+            <img src="icons/github.svg" alt="Screen icon" class="footerIcons" id="GitgubIcon">
+            <p>Github</p>
+            </div>
+        </a>
+        <p style="text-align: right; color: #353535;">© 2022 All rights reserved. </p>
     </footer>
 </html>
 

@@ -11,66 +11,28 @@ div
     display: block;
 }
 
+.Head_info 
+{
+    color: #353535; 
+    text-align: right;
+}
+
+header
+{
+    display: block;
+    border-bottom:1px gray solid;
+}
+
+header button
+{
+    margin-inline-start: 0.5cm;
+    margin-inline-end: 5px;
+}
+
 body
 {
     background-color: #D8DBE2;
     color: #353535;
-}
-
-#Main_info
-{
-    color: #353535;
-    background-color: #D8DBE2;
-    height: 500px;
-    padding: 0;
-    margin: 1cm;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#bio
-{
-    display: flex;
-    height: 500px;
-    border-top: 10px dotted gray;
-    padding: 1cm;
-    text-align: left;
-    margin: auto;
-    align-content: flex-end;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: row-reverse;
-    justify-content: center;
-}
-
-#Content
-{
-    display: flex;
-    overflow-x: overlay;
-}
-.Little_info
-{
-    background-color: #FFFFFF;      
-    color: #353535; 
-    padding: 0;
-    margin: 0;
-    text-align: right;
-}
-
-.Head_info 
-{
-    color: #353535; 
-    padding: 0;
-    margin: 0;
-    text-align: right;
-}
-
-img
-{
-    height: 500px;
-    margin: 5px;
-    width: 300px;
 }
 
 button
@@ -82,21 +44,134 @@ button
     font-size: 20px;
 }
 
-#profile_pic
+#Main_info
 {
-    float: left;
+    color: #353535;
+    background-color: transparent;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
 }
 
-.Option
+#Main_info h1
+{
+    margin:0;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+#Main_info button 
+{
+    background-color:#FF5E71;
+    width: 172px;
+    height: 65px;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+#Main_info img
+{
+    float: left;
+    height: 500px;
+    margin: 10px;
+}
+
+#Main_info h2
+{
+    font-weight: lighter; 
+    font-size: 30px;
+    margin: 0;
+}
+
+#bio
+{
+    display: flex;
+    height: 500px;
+    border-top: 10px dotted #353535;
+    margin: auto;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#Content
+{
+    display: flex;
+    overflow-x: overlay;
+}
+.Option     
 {
     background-color: #523F62;
     width: 514px;
     height: 294px;
-    display: inline-block;
-    color:#FFFFFF;
-    text-align: center;
+    display: inline-flex;
+    color: #FFFFFF;
     margin: 1cm;
+    align-items: flex-start;
+    text-align: justify;
+    flex-direction: column
 }
 
+.icons
+{
+    margin: 0.5cm;
+    width: 70px;
+    filter: invert(43%) sepia(99%) saturate(700%) hue-rotate(315deg) brightness(104%) contrast(104%); 
+}
 
+.icon svg-path
+{
+    filter: invert(43%) sepia(99%) saturate(700%) hue-rotate(315deg) brightness(104%) contrast(104%);
+}
 
+.iconDescription
+{
+    display: flex;
+    align-items: center;
+}
+
+.Little_info
+{
+    color: #353535; 
+    background-color: transparent;
+    font-size: 13px;
+    border-top: 1px grey solid; 
+    display: flex;
+    width: auto;
+}
+
+.footerIcons
+{
+    width: 20px;
+    margin:10px;
+}
+
+.Little_info p
+{
+    margin-left: auto;
+}
+
+a:link 
+{
+    color: #353535;
+    text-decoration: none;
+}  
+
+a:visited 
+{
+    color: #353535;
+    text-decoration: none;
+}  
+a:hover 
+{
+    color: #353535;
+    text-decoration: none;
+}  
+
+a:active 
+{
+    color: #353535;
+    text-decoration: none;
+} 
