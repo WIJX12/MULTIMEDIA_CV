@@ -6,6 +6,11 @@
     height: auto;
 }
 
+div
+{
+    display: block;
+}
+
 body
 {
     background-color: #D8DBE2;
@@ -15,63 +20,57 @@ body
 #Main_info
 {
     color: #353535;
-    width: 500px;
-    height: 500px;
     background-color: #D8DBE2;
-    padding: 70px, 0;
-    margin: auto;
-}
-
-aside
-{
-    background-color: red;
     height: 500px;
-    width: 100px;   
-    padding:0%;
-    text-align: center;
+    padding: 0;
+    margin: 1cm;
     display: flex;
-    text-size-adjust: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
-#c1
+#bio
 {
-    float: right;
+    display: flex;
+    height: 500px;
+    border-top: 10px dotted gray;
+    padding: 1cm;
+    text-align: left;
+    margin: auto;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: center;
 }
 
-#c2
+#Content
 {
-    float: left;
+    display: flex;
+    overflow-x: overlay;
 }
-
-#Little_info
+.Little_info
 {
     background-color: #FFFFFF;      
-    color: #FFFFFF;
-}
-
-#Head_info 
-{
-    background-color:#e40fcf;
     color: #353535; 
-    padding-left: 10px;
+    padding: 0;
+    margin: 0;
     text-align: right;
-    height: 1cm;
-    margin: 1cm;
-    margin-top: 0;
 }
 
-footer
+.Head_info 
 {
-    background-color: #353535;
-    color:#FFFFFF;
+    color: #353535; 
+    padding: 0;
+    margin: 0;
+    text-align: right;
 }
 
 img
 {
-    height: 200px;
-    display: block;
-    margin:auto;
-    width: 40%;
+    height: 500px;
+    margin: 5px;
+    width: 300px;
 }
 
 button
@@ -87,3 +86,17 @@ button
 {
     float: left;
 }
+
+.Option
+{
+    background-color: #523F62;
+    width: 514px;
+    height: 294px;
+    display: inline-block;
+    color:#FFFFFF;
+    text-align: center;
+    margin: 1cm;
+}
+
+
+

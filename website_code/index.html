@@ -1,5 +1,5 @@
 <!DOCTYPE html> 
-<html>
+<html lang=”en”>
     <head>
         <title>
             CV Guillem Pozo Sebastián
@@ -7,25 +7,32 @@
         <link rel="stylesheet" type="text/css" href="CSS_CV.css"/>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
         <script src="JS_CV.js" type="text/javascript"></script>
-    </head>
+        </head>
     <body>  
-        <nav id="Head_info">
+        <div class="Head_info"> <!--TODO: Posar com un nav pot ser-->
             <button type="button" id="IndexButton"  onclick="menuButton('index');">About me</button> <!-- TODO: Add more buttons ?? -->
+            <button type="button" id="IndexButton"  onclick="menuButton('index');">Resume</button> <!-- TODO: Add more buttons ?? -->
             <button type="button" id="ContactButton"  onclick="menuButton('Contact');">Contact</button>        
-        </nav>
-        <aside class="Colunm" id="c2">C2</aside>
-        <aside class="Colunm" id="c1">C1</aside>
+        </div>
         <div id="Main_info">       
-            <img alt="Photo_author_of_CV" src="../FOTO_CV.jpg" id="profile_pic">
-            <p>Programmer & web designer</p>
-            <h1>Guillem Pozo Sebastián</h1>
+            <img alt="Photo_author_of_CV" src="../PHOTO_CV.jpeg" id="profile_pic">
+            <div>
+                <p>Programmer & web designer</p>
+                <h1>Guillem Pozo Sebastián</h1>
+            </div>
         </div>
         <div id="bio">
-
+            <div id="Content">
+                <h1>What i do</h1> 
+                <div id="1option" class="Option">
+                </div>
+                <div id="2option" class="Option">
+                </div> 
+            </div>
         </div>
     </body>
-    <footer id="Little_info">
-        
+    <footer class="Little_info">
+        <!-- TODO: Find icons of TW, Github, Instagram and put into -->
     </footer>
 </html>
 
