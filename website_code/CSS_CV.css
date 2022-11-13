@@ -44,7 +44,7 @@ button
     font-size: 20px;
 }
 
-#Main_info
+.Main_info
 {
     color: #353535;
     background-color: transparent;
@@ -52,17 +52,17 @@ button
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:20px;
+    padding:10px;
 }
 
-#Main_info h1
+.Main_info h1
 {
     margin:0;
     font-size: 40px;
     font-weight: bolder;
 }
 
-#Main_info button 
+.Main_info button 
 {
     background-color:#FF5E71;
     width: 172px;
@@ -71,14 +71,14 @@ button
     margin-top: 20px;
 }
 
-#Main_info img
+#profile_pic
 {
     float: left;
     height: 500px;
     margin: 10px;
 }
 
-#Main_info h2
+.Main_info h2
 {
     font-weight: lighter; 
     font-size: 30px;
@@ -88,7 +88,7 @@ button
 #bio
 {
     display: flex;
-    height: 500px;
+    height: 480px;
     border-top: 10px dotted #353535;
     margin: auto;
     align-items: center;
@@ -96,20 +96,20 @@ button
     justify-content: flex-end;
 }
 
-#Content
+.Content
 {
     display: flex;
     overflow-x: overlay;
+    overflow-y: overlay;
 }
+
 .Option     
 {
     background-color: #523F62;
     width: 514px;
     height: 294px;
-    display: inline-flex;
     color: #FFFFFF;
     margin: 1cm;
-    align-items: flex-start;
     text-align: justify;
     flex-direction: column
 }
@@ -132,6 +132,7 @@ button
     align-items: center;
 }
 
+
 .Little_info
 {
     color: #353535; 
@@ -140,6 +141,7 @@ button
     border-top: 1px grey solid; 
     display: flex;
     width: auto;
+    height: 43px;
 }
 
 .footerIcons
@@ -175,3 +177,148 @@ a:active
     color: #353535;
     text-decoration: none;
 } 
+
+
+/*Contact*/
+aside
+{
+    height: 100px;
+    background-color: transparent;
+    font-size: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+
+#MainContact
+{
+    height: 800px;
+    border-top: 10px dotted #353535;
+}
+
+.groupOptions
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.OptionColumn
+{
+    height: 665px;
+}
+
+#Map
+{
+    width: 514px;
+    height: 550px;
+    justify-content: center;
+    display: flex;
+}
+
+iframe
+{
+    width: 80%;
+    height: 550px;
+}
+
+/*Resum*/
+#MainResum
+{
+    border-top: 10px dotted #353535;
+    height: 1100px;
+}
+
+.Container
+{
+    margin: 0.5cm;
+    text-align: left;
+}
+
+#Education
+{
+    overflow: hidden;
+}
+.Information
+{
+    color: #353535;
+    border: 1px transparent;
+    border-radius: 25px;
+    background-color: #FF5E71;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 150px;
+    padding: 5px;
+    display: flex;
+}
+
+.Intitution 
+{
+    display: flex;
+}
+
+.progressBar
+{
+  height: 20px;
+  margin: 25px;
+  max-width: 10cm;
+  background-color:#353535;
+  position:relative;
+  border-radius: 30px;
+  border: 10px #fff ;
+}
+
+.progressBar-indicator
+{
+    height: 100%;
+    border-radius: 30px;
+    border: 10px #fff;
+    -webkit-mask:linear-gradient(#fff 0 0);
+    mask:linear-gradient(#fff 0 0);
+}
+
+.progressBar-indicator::before
+{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-image: linear-gradient(to right, #FFFF, #FF5E71);
+}
+
+#lvlLanguage
+{
+    display: flex;
+    justify-content: center;
+}
+
+.Information2 
+{
+    color: #353535;
+    border: 1px transparent;
+    border-radius: 25px;
+    background-color: #FF5E71;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+    width: 84px;
+    padding: 7px;
+    display: flex;
+    margin: 15px;
+}
+
+.cercle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    color: #353535;
+    background: #FF5E71;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}

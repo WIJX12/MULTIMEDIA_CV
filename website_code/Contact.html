@@ -10,18 +10,58 @@
     </head>
 
     <body>
-        <div class="Head_info">
-            <header>
-                <button type="button" id="IndexButton"  onclick="menuButton('index');">About me</button> <!-- TODO: Make more buttons ?? -->
-                <button type="button" id="ContactButton"  onclick="menuButton('Contact');">Contact</button>        
-            </header>
-        </div>
-
-        <div id="Main_info">
-            <section>
-                <article>
-                </article>
-            </section>
-        </div>
+        <header class="Head_info"> <!--TODO: Posar com un nav pot ser-->
+            <button type="button" id="IndexButton"  onclick="menuButton('index');">About me</button>
+            <button type="button" id="IndexButton"  onclick="menuButton('Resume');">Resume</button> 
+            <button type="button" id="ContactButton"  onclick="menuButton('Contact');">Contact</button>          
+        </header>
+        <aside class="TitlePage">
+           <h1>Contact</h1>
+        </aside>
+        <div id="MainContact" class="Main_info MainColumn">
+            <div id="groupContact" class="groupOptions">
+                <div id="Email" class="Option">
+                    <div class="iconDescription">
+                        <img src="icons/envelope-at.svg" alt="Mail icon" class="icons" id="mailIcon">
+                        <h2>u1972840@campus.udg.edu</h2> 
+                    </div>
+                </div>
+                <div id="Phone" class="Option">
+                    <div class="iconDescription">
+                        <img src="icons/telephone.svg" alt="Phone icon" class="icons" id="phoneIcon" style="width:60px;">
+                        <h2>662-046-XXX</h2> 
+                    </div>
+                </div>
+            </div>
+            <div id="Ubication" class="Option OptionColumn">
+                <div class="iconDescription">
+                    <img src="icons/geo-alt.svg" alt="Ubication icon" class="icons" id="UbiIcon">
+                    <h2>Figueres</h2> 
+                </div>
+                 <div id="Map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11810.521568150432!2d2.968787!3d42.265065!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8cb908a0f0212de1!2sFigueres!5e0!3m2!1sen!2ses!4v1668302339243!5m2!1sen!2ses" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            </div>
+        </div>  
     </body>
+    <footer class="Little_info">
+        <!-- TODO: Find icons of TW, Github, Instagram and put into -->
+        <a href="https://www.instagram.com/">
+            <div class="iconDescription">
+                <img src="icons/instagram.svg" alt="Screen icon" class="footerIcons" id="InstagramIcon">
+                <p>Instagram</p>
+            </div>
+       </a>
+       <a href="https://twitter.com/home">
+            <div class="iconDescription">
+                <img src="icons/twitter.svg" alt="Screen icon" class="footerIcons" id="TwitterIcon">
+                <p>Twitter</p>
+            </div>  
+        </a>
+        <a href="https://github.com/WIJX12">
+            <div class="iconDescription">
+            <img src="icons/github.svg" alt="Screen icon" class="footerIcons" id="GitgubIcon">
+            <p>Github</p>
+            </div>
+        </a>
+        <p style="text-align: right; color: #353535;">© 2022 All rights reserved. </p>
+    </footer>
 </html>

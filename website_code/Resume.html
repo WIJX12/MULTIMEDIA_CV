@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Resume page
+        </title>
+        <link rel="stylesheet" type="text/css" href="CSS_CV.css"/>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+        <script src="JS_CV.js" type="text/javascript"></script>
+    </head>
+
+    <body>
+        <header class="Head_info"> <!--TODO: Posar com un nav pot ser-->
+            <button type="button" id="IndexButton"  onclick="menuButton('index');">About me</button>
+            <button type="button" id="IndexButton"  onclick="menuButton('Resume');">Resume</button> 
+            <button type="button" id="ContactButton"  onclick="menuButton('Contact');">Contact</button>        
+        </header>
+        <aside class="TitlePage">
+           <h1>Resume</h1>
+        </aside>
+        <div id="MainResum" class="Main_info MainColumn">
+            <div id="Education" class="Option OptionColumn">
+                <div class="iconDescription">
+                    <img src="icons/book.svg" alt="Eduction icon" class="icons" id="bookIcon">
+                    <h2>Education</h2> 
+                </div>
+                <div id="year1" class="Container">
+                    <p class="Information">2020</p>
+                    <div class="Institution">
+                        <h1>Secondary school certificate</h1>
+                        <h2>High school Oliva gran</h2>
+                        </div>
+                </div>
+                <div id="year2" class="Container">
+                    <p class="Information">2020-Currently</p>
+                    <div class="Institution">
+                        <h1>Bachelor's degree in Computer Engineering</h1>
+                        <h2>University of Girona</h2>
+                        </div>
+                </div>
+            </div>
+            <div id="groupResum" class="groupOptions">
+                <div id="Coding skills" class="Option OptionColumn">
+                    <div class="iconDescription">
+                    <img src="icons/code-slash.svg" alt="Code icon" class="icons" id="codeIcon2">
+                        <h2>Code skills</h2> 
+                    </div>
+                        <div class="Container" id="c++">
+                            <div style="display:flex; align-items: center;">
+                                <p class="Information" style="display: flex;">C++</p>
+                                <h5 style=" margin-left: auto;">90%</h5>
+                            </div>
+                            <div class="progressBar Container" style="width: 90%;">
+                                <div class="progressBar-indicator" style="width:90%;"></div>
+                            </div>
+                        </div>
+                        <div class="Container" id="java">
+                            <div style="display:flex; align-items: center;">
+                                <p class="Information" style="display: flex;">Java</p>
+                                <h5 style=" margin-left: auto;">60%</h5>
+                            </div>
+                            <div class="progressBar Container" style="width: 60%;">
+                                <div class="progressBar-indicator" style="width:60%;"></div>
+                            </div>
+                        </div>
+                        <div class="Container" id="C">
+                            <div style="display:flex; align-items: center;">
+                                <p class="Information" style="display: flex;">C</p>
+                                <h5 style=" margin-left: auto;">70%</h5>
+                            </div>
+                            <div class="progressBar Container" style="width: 70%;">
+                                <div class="progressBar-indicator" style="width:70%;"></div>
+                            </div>
+                        </div>
+                </div>
+                <div id="language" class="Option">
+                    <div class="iconDescription">
+                        <img src="icons/translate.svg" alt="Code language" class="icons" id="codeLanguage">
+                        <h2>Language</h2> 
+                    </div>
+                    <div id="lvlLanguage">
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <p class="Information2">Catalan</p>
+                            <div class="cercle">
+                                <h3>Native</h3>
+                            </div>
+                        </div>
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <p class="Information2">Spanish</p>
+                            <div class="cercle">
+                                <h3>Native</h3>
+                            </div>
+                        </div>
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <p class="Information2">English</p>
+                            <div class="cercle">
+                                <h3>B1</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>         
+        </div>
+    </body>
+    <footer class="Little_info">
+        <!-- TODO: Find icons of TW, Github, Instagram and put into -->
+        <a href="https://www.instagram.com/">
+            <div class="iconDescription">
+                <img src="icons/instagram.svg" alt="Screen icon" class="footerIcons" id="InstagramIcon">
+                <p>Instagram</p>
+            </div>
+       </a>
+       <a href="https://twitter.com/home">
+            <div class="iconDescription">
+                <img src="icons/twitter.svg" alt="Screen icon" class="footerIcons" id="TwitterIcon">
+                <p>Twitter</p>
+            </div>  
+        </a>
+        <a href="https://github.com/WIJX12">
+            <div class="iconDescription">
+            <img src="icons/github.svg" alt="Screen icon" class="footerIcons" id="GitgubIcon">
+            <p>Github</p>
+            </div>
+        </a>
+        <p style="text-align: right; color: #353535;">© 2022 All rights reserved. </p>
+    </footer>
+</html>

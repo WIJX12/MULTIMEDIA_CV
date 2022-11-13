@@ -10,11 +10,11 @@
         </head>
     <body>  
         <header class="Head_info"> <!--TODO: Posar com un nav pot ser-->
-            <button type="button" id="IndexButton"  onclick="menuButton('index');">About me</button> <!-- TODO: Add more buttons ?? -->
-            <button type="button" id="IndexButton"  onclick="menuButton('index');">Resume</button> <!-- TODO: Add more buttons ?? -->
-            <button type="button" id="ContactButton"  onclick="menuButton('Contact');">Contact</button>        
+            <button type="button" id="IndexButton"  onclick="menuButton('index');">About me</button>
+            <button type="button" id="IndexButton"  onclick="menuButton('Resume');">Resume</button> 
+            <button type="button" id="ContactButton"  onclick="menuButton('Contact');">Contact</button>         
         </header>
-        <section id="Main_info">       
+        <section class="Main_info" id="MainIndex">       
             <img alt="Photo of author" src="PHOTO_CV.jpeg" id="profile_pic">
             <div id="MainText">
                 <h1>Guillem Pozo Sebastián</h1>
@@ -24,10 +24,10 @@
         </section>
         <section id="bio">
             <h1>What i do</h1>
-            <div id="Content"> 
+            <div class="Content" id="bioContent"> 
                     <div id="1option" class="Option">
                         <div class="iconDescription">
-                            <img src="icons/code-slash.svg" alt="Code screen" class="icons" id="codeIcon">
+                            <img src="icons/code-slash.svg" alt="Code icon" class="icons" id="codeIcon">
                             <h2>Software developer</h2> 
                         </div>
                         <h3 style="margin:10px; font-weight:lighter; background-color: #523F62;">Experience with web site development. Seasoned in different languages as HTML, CSS and others. And also knowledge of scripting language such as could be PHP and JavaScript.</h3>
